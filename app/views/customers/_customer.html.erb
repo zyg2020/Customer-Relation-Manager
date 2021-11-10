@@ -2,11 +2,7 @@
   <div class="card">
     <div class="card-content">
       <p class="title">
-        <% if show_link %>
           <%= link_to customer.full_name, customer %>
-        <% else %>
-          <%= customer.name %>
-        <% end %>
       </p>
       <% if customer.image.present? %>
         <div class="card-image">
